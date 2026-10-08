@@ -1,18 +1,25 @@
-# React + Vite
+# Assignment 4: React Profile Card (Props)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A reusable `ProfileCard` component that receives `name`, `role`, `description` and `imageUrl` as props. `App` keeps an array of three students and renders one card per item with `map()`, passing each object through spread props and a unique `key`.
 
-Currently, two official plugins are available:
+## Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Needs Node.js LTS (v20+). From the repo root:
 
-## React Compiler
+```bash
+cd assignment-4-profile-card
+npm install
+npm run dev
+```
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Open http://localhost:5173 (use the URL Vite prints). Stop with `Ctrl+C`.
 
-Note: This will impact Vite dev & build performances.
+Other scripts: `npm run build` (output in `dist/`), `npm run lint`.
 
-## Expanding the ESLint configuration
+Profile photos load from `randomuser.me`, so an internet connection is needed to see them.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Files
+
+- `src/ProfileCard.jsx`: the card component (props).
+- `src/App.jsx`: student data and list rendering.
+- `src/App.css`, `src/index.css`: styles.
