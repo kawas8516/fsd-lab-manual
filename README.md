@@ -4,3 +4,4 @@
 - assignment-4-profile-card: React props
 - assignment-5-controlled-form: React useState, two-way binding
 - assignment-6-counter-app: React state management and guards
+- assignment-7-express-rest-api: Express REST API
